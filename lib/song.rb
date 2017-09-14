@@ -21,14 +21,14 @@ class Song
     all.clear
   end
 
-  def save
-    self.class.all << self
+  def save #song.save
+    self.class.all << self #expect(Song.all).to include(song)
   end
 
   def self.create(song) #creates new instances
-    new_song = self.new(song)
+    new_song = self.new(song) #  created_song = Song.create("Kaohsiung Christmas")
     new_song.save #invokes .save on that instance
-    new_song
+    new_song #  expect(Song.all).to include(created_song)
   end
 
 #relationships with class Artist
