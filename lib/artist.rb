@@ -10,6 +10,13 @@ class Artist
   def initialize(name)
     @name = name
     @songs = [] #creates a 'songs' property set to an empty array (artist has many songs)
+    #returns the artist's 'songs' collection (artist has many songs)
+    # expect(artist.songs).to eq([])
+    #
+    # artist.songs << song
+    #
+    # expect(artist.songs).to include(song)
+
   end
 
   def self.all
