@@ -41,6 +41,7 @@ class Song
     artist.add_song(self) #invokes Artist#add_song to add itself to the artist's collection of songs (artist has many songs)
   end
 
+
 #relationship with class Genres
   # Genres have many songs and are initialized with an empty list of songs.
   # Songs have one genre.
